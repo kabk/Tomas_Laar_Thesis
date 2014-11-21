@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: blue;
+	color: #FFFFFF;
+    height: 30px;
+    width: 100%;
+	padding-top: 7px;
+    padding-left:50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@media only print  {
+    .navbar, #left, #right{
+        display: none;
+    }
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 26px;
+}
+
+/* This is the subttitle text */
+h1 {font-family: 'Noto Serif', serif;
+    font-size: 16px;
+	line-height: 24px ;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+}
+/* This is the references and footnotes */
+h2 {font-family: sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 20px;
+}
+
+/* This is the running text */
+h5 {font-family: 'Noto Serif', serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h6 {
+}
+
+h4 {
+    text-align: center;
+    font-size: 12px;
+}
+
+.columns { 
+    text-align: justify;
+    text-justify: inter-word;
+    height: 500px;
+    -webkit-column-gap: 100px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-gap: 100px;
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+}
+
+#left, #right{
+    font-size: 20px;
+    position: fixed;
+    left: 15px;
+    top:50%;
+}
+
+#right{
+    left: inherit;
+    right: 15px;
+}
+
+header {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+a, a:hover, a:visited, a:active {
+    color: #1419FF;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* This makes the images scale to the full width of the page */
+img {
+    max-height: 85%;
+    max-width: auto;
+}
+
+/* macbook pro fullscreen */
+@media screen and (max-width: 1024px) {
+    .columns {
+    -webkit-column-gap: 100px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-gap: 100px;
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    }
+}
+
+/* ipad - portrait */
+@media screen and (max-width: 768px) {
+    .columns {
+    -webkit-column-gap: 100px;
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -webkit-column-width: 100px;
+    -moz-column-gap: 100px;
+    -moz-column-count: 1; /* Firefox */
+    -moz-colimn-width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    }
+    header {
+        margin-left: 50px;
+        margin-right: 50px;
+    } 
+}
+
+/* iphone - portrait */
+@media screen and (max-width: 36em) {
+     .columns {
+    -webkit-column-gap: 100px;
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -webkit-column-width: 100px;
+    -moz-column-gap: 100px;
+    -moz-column-count: 1; /* Firefox */
+    -moz-colimn-width: 80px;
+    column-count: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    line-height: 16px;
+    }
+
+   header {
+        font-size: 12px;
+		line-height: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+    } 
+
+    h1 {
+        font-size: 14px;
+		line-height: 16px;
+    } 
+    h5 {
+    font-size: 14px;
+	line-height: 18px;
+}
+     
+}
+
+@media only print {
+    /**
+     * When printing, the header is useful but it doesn’t need
+     * to be so big
+     */
+    header h1 {
+        font-size: 16px;
+        font-style: italic;
+    } 
+	
+	header h2 { 
+		font-size: 16px; 
+		font-color: red;
+	}
+    /* And the navigation we don’t need */
+    nav {
+        display: none;
+    }
+}
