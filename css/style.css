@@ -14,20 +14,15 @@
     top: 0;
     left: 0;
 }
-@media only print  {
-    .navbar, #left, #right{
-        display: none;
-    }
-}
 
 body {
-    font-size: 14px;
+    font-size: 12px;
     font-family: sans-serif;
     line-height: 26px;
 }
 
 /* This is the subttitle text */
-h1 {font-family: 'Noto Serif', serif;
+h1 {font-family: sans-serif;
     font-size: 16px;
 	line-height: 24px ;
     text-align: center;
@@ -98,9 +93,22 @@ p {
 }
 
 /* This makes the images scale to the full width of the page */
+
 img {
-    max-height: 85%;
-    max-width: auto;
+    max-width: 70%;
+    height: auto;
+}
+
+@media {
+  img { 
+    width: auto; /* for ie 8 */
+  }
+}
+
+@media only print  {
+    .navbar, #left, #right{
+        display: none;
+    }
 }
 
 /* macbook pro fullscreen */
@@ -156,18 +164,19 @@ img {
 
    header {
         font-size: 12px;
-		line-height: 16px;
+		line-height: 18px;
         margin-left: 16px;
         margin-right: 16px;
     } 
 
     h1 {
-        font-size: 14px;
-		line-height: 16px;
+        font-size: 12px;
+		line-height: 18px;
     } 
+
     h5 {
-    font-size: 14px;
-	line-height: 18px;
+    font-size: 12px;
+	line-height: 20px;
 }
      
 }
