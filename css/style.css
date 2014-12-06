@@ -26,10 +26,24 @@
     color:white !important;
 }
 
+/* ipad - portrait */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+        line-height: 35px;
+    } 
+}
+
+@media screen and (max-width: 36em) {
+    .title{
+         font-size: 20px;
+        line-height: 25px;
+    }
+}
 
 .navbar {
     background-color: blue;
-    height: 30px;
+    height: 20px;
     width: 100%;
 	padding-top: 7px;
     padding-left:50px;
@@ -45,36 +59,35 @@ body {
 }
 
 /* This is the CHAPTERS in capitals */
-h1 {font-family: 'Noto Serif', serif;
+h1 {
+    font-family: sans-serif;
     font-size: 16px;
     line-height: 24px ;
-    text-align: center;
-    font-style: italic;
-    font-weight: 400;
-    color: #1419FF;
+    text-align: left;
+    font-weight: 600;
+    color: blue;
 }
 
 /* This is the subttitle text */
-h2 {font-family: 'Noto Serif', serif;
-    font-size: 16px;
+h2 {font-family: sans-serif;
+    font-size: 12px;
 	line-height: 24px ;
-    text-align: center;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /* This small is white text */
 h3 {font-family: sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: lighter;
-    line-height: 20px;
+    line-height: 14px;
     color:#ffffff;
 }
 
 /* images discription */
 h4 {
     text-align: center;
-    font-size: 12px;
+    font-size: 12p
 }
 
 /* This is the running text */
@@ -106,12 +119,18 @@ h6 {
     font-size: 20px;
     position: fixed;
     left: 15px;
-    top:50%;
+    top:0;
+    z-index: 10;
+    
 }
 
 #right{
     left: inherit;
     right: 15px;
+}
+
+#left a, #right a{
+    color:white !important;
 }
 
 header {
@@ -123,6 +142,8 @@ header {
 a, a:hover, a:visited, a:active {
     color: #1419FF;
     text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
 }
 
 p {
@@ -132,7 +153,7 @@ p {
 /* This makes the images scale to the full width of the page */
 
 img {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -195,7 +216,7 @@ img {
     column-count: 1;
     margin-left: 20px;
     margin-right: 20px;
-    padding: 20px;
+    /*padding: 20px;*/
     line-height: 16px;
     }
 
