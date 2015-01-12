@@ -46,7 +46,10 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> FETCH_HEAD
 /* ipad - portrait */
 @media screen and (max-width: 768px) {
     .title {
@@ -54,6 +57,16 @@ body {
         line-height: 35px;
     } 
 }
+<<<<<<< HEAD
+=======
+
+@media screen and (max-width: 36em) {
+    .title{
+         font-size: 20px;
+        line-height: 25px;
+    }
+}
+>>>>>>> FETCH_HEAD
 
 <<<<<<< HEAD
 =======
@@ -100,12 +113,15 @@ body {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 h1 {font-family: sans-serif;
     font-size: 22px;
     line-height: 28px ;
     text-align: left;
     font-weight: bold;
 =======
+=======
+>>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
 =======
@@ -118,6 +134,9 @@ h1 {
     font-weight: 600;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
@@ -187,7 +206,12 @@ h6 {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     z-index: 10;  
+=======
+    z-index: 10;
+    
+>>>>>>> FETCH_HEAD
 =======
     z-index: 10;
     
@@ -212,6 +236,7 @@ h6 {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 a, a:hover, a:visited, a:active {
@@ -227,6 +252,8 @@ a, a:hover, a:visited, a:active {
         line-height: 35px;
     } 
 =======
+=======
+>>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
 =======
