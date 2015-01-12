@@ -64,7 +64,16 @@
 	display: block;
 	width: 100%;
 	height: 100%;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 	opacity: 0.95;
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
 }
 
 .fancybox-image {
@@ -251,7 +260,22 @@
 	left: 0;
 	color: #fff;
 	padding: 10px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 	background: blue;
+=======
+	background: #000;
+	background: rgba(0, 0, 0, .8);
+>>>>>>> FETCH_HEAD
+=======
+	background: #000;
+	background: rgba(0, 0, 0, .8);
+>>>>>>> FETCH_HEAD
+=======
+	background: #000;
+	background: rgba(0, 0, 0, .8);
+>>>>>>> FETCH_HEAD
 }
 
 /*Retina graphics!*/
