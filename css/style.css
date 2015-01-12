@@ -3,6 +3,25 @@
     padding: 0;
 }
 
+#bg {
+    opacity: 0.05;
+    z-index: -10;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    
+     /* Preserve aspet ratio */
+    min-width: 20%;
+    min-height: 20%;
+}
+
+body { 
+    font-family: 'Noto Serif', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 #wrapper{
     background-color: blue;
     position:absolute;
@@ -14,22 +33,21 @@
 }
 
 .title{
-    font-size: 40px;
-    font-family: sans-serif;
-    line-height: 50px;
-    margin-left: 10%;
+    font-size: 130px;
+    font-family:sans-serif;
+    line-height: 130px;
+    margin-left: 50px;
     margin-right: 10%;
-    text-align: center;
-    margin-top: 15%;
+    margin-top: 7px;
 }
 .title a{
     color:white !important;
+    outline: 0;
 }
-
 
 .navbar {
     background-color: blue;
-    height: 30px;
+    height: 20px;
     width: 100%;
 	padding-top: 7px;
     padding-left:50px;
@@ -38,54 +56,41 @@
     left: 0;
 }
 
-body {
-    font-size: 12px;
-    font-family: sans-serif;
-    line-height: 26px;
-}
-
 /* This is the CHAPTERS in capitals */
-h1 {font-family: 'Noto Serif', serif;
-    font-size: 16px;
-    line-height: 24px ;
-    text-align: center;
-    font-style: italic;
-    font-weight: 400;
-    color: #1419FF;
+h1 {font-family: sans-serif;
+    font-size: 22px;
+    line-height: 28px ;
+    text-align: left;
+    font-weight: bold;
+    color: blue;
 }
 
 /* This is the subttitle text */
-h2 {font-family: 'Noto Serif', serif;
-    font-size: 16px;
+h2 {font-family: sans-serif;
+    font-size: 12px;
 	line-height: 24px ;
-    text-align: center;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /* This small is white text */
 h3 {font-family: sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: lighter;
-    line-height: 20px;
+    line-height: 14px;
     color:#ffffff;
 }
 
-/* images discription */
+/* Intro tekst */
 h4 {
-    text-align: center;
-    font-size: 12px;
-}
-
-/* This is the running text */
-h5 {font-family: 'Noto Serif', serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: blue;
 }
 
 h6 {
 }
-
 
 .columns { 
     text-align: justify;
@@ -106,7 +111,8 @@ h6 {
     font-size: 20px;
     position: fixed;
     left: 15px;
-    top:50%;
+    top:0;
+    z-index: 10;  
 }
 
 #right{
@@ -114,32 +120,29 @@ h6 {
     right: 15px;
 }
 
-header {
-    font-size: 16px;
-    text-align: center;
-    padding-top: 20px;
+#left a, #right a{
+    color:white !important;
 }
 
 a, a:hover, a:visited, a:active {
-    color: #1419FF;
+    color: orange;
     text-decoration: none;
+    font-family:sans-serif;
 }
 
-p {
-    margin-top: 0;
+/* ipad - portrait */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+        line-height: 35px;
+    } 
 }
 
-/* This makes the images scale to the full width of the page */
-
-img {
-    max-width: 70%;
-    height: auto;
-}
-
-@media {
-  img { 
-    width: auto; /* for ie 8 */
-  }
+@media screen and (max-width: 36em) {
+    .title{
+         font-size: 20px;
+        line-height: 25px;
+    }
 }
 
 @media only print  {
@@ -195,27 +198,14 @@ img {
     column-count: 1;
     margin-left: 20px;
     margin-right: 20px;
-    padding: 20px;
+    /*padding: 20px;*/
     line-height: 16px;
     }
 
-   header {
-        font-size: 12px;
-		line-height: 18px;
-        margin-left: 16px;
-        margin-right: 16px;
-    } 
-
-    h1 {
-        font-size: 12px;
+    body {
+        font-size: 10px;
 		line-height: 18px;
     } 
-
-    h5 {
-    font-size: 12px;
-	line-height: 20px;
-}
-     
 }
 
 @media only print {
