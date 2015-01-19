@@ -45,6 +45,15 @@ body {
     outline: 0;
 }
 
+/* ipad - portrait */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+        line-height: 35px;
+    } 
+}
+
+
 .navbar {
     background-color: black;
     height: 20px;
@@ -87,6 +96,14 @@ h4 {
     font-family: sans-serif;
     font-weight: bold;
     color: blue;
+    text-align: center;
+    font-size: 12p
+}
+
+/* This is the running text */
+h5 {font-family: 'Noto Serif', serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 h6 {
@@ -113,6 +130,19 @@ h6 {
     left: 15px;
     top:0;
     z-index: 10;  
+    z-index: 10;  
+    z-index: 10;
+    
+    z-index: 10;
+    
+    z-index: 10;
+    
+>>>>>>> FETCH_HEAD
+=======
+    z-index: 10;
+    
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
 }
 
 #right{
@@ -122,10 +152,12 @@ h6 {
 
 #left a, #right a{
     color:white !important;
+<<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 a, a:hover, a:visited, a:active {
-    color: lightblue;
+    color: orange;
     text-decoration: none;
     font-family:sans-serif;
 }
@@ -136,6 +168,36 @@ a, a:hover, a:visited, a:active {
         font-size: 30px;
         line-height: 35px;
     } 
+=======
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+}
+
+a, a:hover, a:visited, a:active {
+    color: lightblue;
+    text-decoration: none;
+    font-family:sans-serif;
+}
+
+<<<<<<< HEAD
+/* ipad - portrait */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+        line-height: 35px;
+    } 
+=======
+/* This makes the images scale to the full width of the page */
+
+img {
+    max-width: 50%;
+    height: auto;
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
 }
 
 @media screen and (max-width: 36em) {
