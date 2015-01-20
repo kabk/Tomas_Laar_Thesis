@@ -17,9 +17,22 @@
         <script type="text/javascript" src="js/jquery-latest.min.js"></script>
         <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
         <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script>
+          $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
-
-</head>
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('body,html').animate({'scrollLeft': target.offset().left}, 1000);
+                  return false;
+                }
+              }
+            });
+          });
+        </script>
+    </head>
 	<body>
         
         <img src="img/background.jpg" id="bg" alt="">
