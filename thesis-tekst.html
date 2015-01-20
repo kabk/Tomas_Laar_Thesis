@@ -4,6 +4,23 @@
 
 			<head>
 				<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+				<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+			  <script>
+				  $(function() {
+				    $('a[href*=#]:not([href=#])').click(function() {
+				      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+				        var target = $(this.hash);
+				        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				        if (target.length) {
+				          $('body,html').animate({'scrollLeft': target.offset().left}, 1000);
+				          return false;
+				        }
+				      }
+				    });
+				  });
+				</script>
 			</head>
 
 		    <body>
