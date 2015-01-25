@@ -132,9 +132,23 @@ h6 {
 
 a:hover {
     background: lightblue;
+      text-decoration:none;
+  padding-left:10px;
+  -webkit-transition: all 0.4s ease;
+     -moz-transition: all 0.4s ease;
+       -o-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+          transition: all 0.4s ease;
 }
 
 a,  a:visited, a:active {
+      text-decoration:none;
+  -webkit-transition: all 0.4s ease;
+     -moz-transition: all 0.4s ease;
+       -o-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+
     color: blue;
     text-decoration: none;
     font-family:sans-serif;
