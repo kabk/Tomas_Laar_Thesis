@@ -11,6 +11,16 @@ body {
     line-height: 25px;
 }
 
+    a:hover:before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0; bottom: 0; left: 0; right: 0;
+            z-index: -1;
+        }
+        li:nth-of-type(1) a:hover:before {
+            background-color: blue;
+
 #wrapper{
     background-color: blue;
     position:absolute;
